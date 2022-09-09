@@ -1,0 +1,366 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+
+/*--------------------*/
+
+//импорт гогл стиля шрифта
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@600;700;800&display=swap');
+
+// это настройки всех кнопок по примеру первой в меню
+.button-bg {
+	background-color: #3A68B8;
+	padding: 15px 30px;
+	border-radius: 5px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+body {
+	background-color: #0A121F;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.content {
+	max-width: 1146px;
+	background-color: #0A121F;
+
+	overflow: visible;
+	display: inline;
+
+}
+
+.menu {
+	overflow: visible;
+	text-align: center;
+	background: #0A121F;
+
+
+
+
+	// .menu__robbot
+
+	&__robbot {
+		display: inline-flex;
+
+	}
+
+
+
+	// .menu__robbot-img
+
+	&__robbot-img {
+		width: 30px;
+		margin: 0 15px 0 0;
+		display: inline-flex;
+	}
+
+
+
+	// .menu__robbot-a
+
+	&__robbot-a {
+		color: #3A68B8;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 31px
+	}
+
+	// .menu__spusoc
+
+	&__spusoc {
+		display: inline-flex;
+
+	}
+
+	// .menu__ul
+
+	&__ul {
+		display: inline-flex;
+		margin: 39px 256px 39px 84px;
+	}
+
+	// .menu__li
+
+	&__li {
+		padding: 0 40px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	// .menu__a
+
+	&__a {
+		color: #FFFFFF;
+	}
+
+	// .menu__bottom
+
+	&__bottom {
+		display: inline-flex;
+
+	}
+
+	// .menu__button-sign
+
+	&__button-sign {
+		background-color: #3A68B8;
+		padding: 15px 30px;
+		border-radius: 5px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		color: #FFFFFF;
+	}
+}
+
+
+
+// первая страница без меню и лого , текст с кнопками право img лево
+.pervaz-strani {
+
+
+	padding: 90px 0 90px 0;
+	background: #08101E;
+
+	display: flex;
+	justify-content: center;
+
+	// .pervaz-strani__lefo
+
+	&__lefo {
+		margin: 0 30px 0 0;
+		padding: 20px 0 0 30px;
+		max-width: 604px;
+		max-height: 415px;
+	}
+
+	// .pervaz-strani__lefo-text1
+
+	&__lefo-text1 {
+		text-transform: uppercase;
+		margin: 0 0 10px 0;
+		color: #3A68B8;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 160%;
+	}
+
+	// .pervaz-strani__lefo-text2
+
+	&__lefo-text2 {
+
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 55px;
+		line-height: 130%;
+
+		color: #FFFFFF;
+	}
+
+	// .pervaz-strani__lefo-text3
+
+	&__lefo-text3 {
+		margin: 40px 0 50px 0;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 160%;
+
+		color: #FFFFFF;
+
+		opacity: 0.7;
+	}
+
+	// .pervaz-strani__lefo-button
+
+	&__lefo-button {
+		display: flex;
+	}
+
+	// .pervaz-strani__lefo-button1
+
+	&__lefo-button1 {
+		margin: 0 20px 0 0;
+
+	}
+
+	// .pervaz-strani__lefo-button1-b
+
+	&__lefo-button1-b {}
+
+	// .pervaz-strani__lefo-button2
+
+	&__lefo-button2 {}
+
+	// .pervaz-strani__lefo-button2-b
+
+	&__lefo-button2-b {
+
+
+
+		// .pervaz-strani__lefo-button2-b_img
+
+		&_img {
+			padding: 0 10px 0 0;
+		}
+	}
+
+
+
+
+
+
+	// .pervaz-strani__prafo
+
+	&__prafo {}
+
+	// .pervaz-strani__prafo-img
+
+	&__prafo-img {
+		margin: 20px 0 0 114px;
+	}
+}
+
+
+
+// первая страница лого
+
+.spicok-logo {
+	text-align: center;
+	background-color: #08101E;
+
+	// .spicok-logo__kontent
+	&__kontent {
+		display: inline-flex;
+	}
+
+	// .spicok-logo__blog
+
+	&__blog {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .spicok-logo__element
+
+	&__element {}
+
+	&__element:nth-child(1) {
+		margin: 0px 71px 0 0;
+	}
+
+	&__element:nth-child(2) {
+		margin: 0px 71px 0 0;
+	}
+
+	&__element:nth-child(3) {
+		margin: 0px 71px 0 0px;
+	}
+}
