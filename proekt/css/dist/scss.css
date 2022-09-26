@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@600;700;800&display=swap");
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -113,10 +113,10 @@ body {
 }
 
 .content {
-  max-width: 1146px;
+  width: 100%;
   background-color: #0A121F;
   overflow: visible;
-  display: inline;
+  display: block;
 }
 
 .menu {
@@ -128,7 +128,7 @@ body {
   display: inline-flex;
 }
 .menu__robbot-img {
-  width: 30px;
+  max-width: 30px;
   margin: 0 15px 0 0;
   display: inline-flex;
 }
@@ -245,4 +245,39 @@ body {
 }
 .spicok-logo__element:nth-child(3) {
   margin: 0px 71px 0 0px;
+}
+
+.brain {
+  margin: 175px 0 170px 0;
+}
+.brain__item {
+  display: flex;
+  justify-content: center;
+}
+.brain__form {
+  padding: 178px 0 177px 0;
+  margin: 0 0 0 68px;
+}
+
+.form__item {
+  max-width: 484px;
+  color: #FFFFFF;
+}
+.form__title-h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  /* or 52px */
+  padding: 0 0 30px 0;
+}
+.form__nub-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  padding: 0 0 50px 0;
 }
